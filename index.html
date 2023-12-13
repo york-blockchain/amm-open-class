@@ -47,7 +47,6 @@
             * Order book based exchange
             * Decentralized Exchange
             * Constant Product AMM
-            * Recent developments in AMM
             ---
             ## Decentralized Finance
             * **DeFi**: Financial systems built with smart contracts as the platform for enforcing rules, instead of legal system
@@ -67,6 +66,15 @@
             * A Market Order (MO) states intent to buy/sell N shares at the best
             possible price(s) available on the OB at the time of MO submission
             ---
+            ## OB limitations
+            * Higher transaction fees and slower transaction speeds.
+            * Each trade requiring on-chain validation, the underlying network’s throughput can become a bottleneck, thus affecting the overall efficiency of the exchange.
+            * off-chain OB DEX have centralization risk
+            ---
+            ## Decentralized Exchange
+            * Platforms that facilitate peer-to-peer cryptocurrency trading without relying on intermediaries or centralized authorities.
+            * Operate on blockchains, allowing users to trade directly with one another while retaining control over their private keys and funds.
+            ---
             ## Constant Product AMM
             * An AMM is a special contract that buys and sells an asset according to specific rules
             * Uniswap is most famous example on Ethereum
@@ -80,7 +88,7 @@
             ## Constant Product Rule, 2
 
             * Suppose there are 10 of token A and 4 of token B
-                  k = 10 * 4 = 40
+                 <br/> k = 10 * 4 = 40
             * The price of A in units of B is
                   4 / 10 = 0.4
             * The price of B in units of A is
@@ -90,20 +98,20 @@
 
             * I want to buy exactly 2 units of A so I withdraw 2 A tokens from reserves, leaving 8 A tokens
             * How many Bs must there now be?
-                  8 * B = 40
-                  B = 40 / 8
-                  B = 5
+                  <br/>8 * B = 40
+                  <br/>B = 40 / 8
+                  <br/>B = 5
             * Since B started at 4 tokens I need to deposit 1 unit of B to bring it up to 5
             ---
             ## Constant Product Rule, 4
 
             * Now there are 8 of token A and 5 of token B
             * `k` remains 40 <span style="margin-left: 20px; color: green; font-size: 120%">&check;</span>:
-                  k = 8 * 5 = 40
+            <br/>k = 8 * 5 = 40
             * The price of A in units of B goes up:
-                  5 / 8 = 0.625
+            <br/>5 / 8 = 0.625
             * The price of B in units of A goes down:
-                  8 / 5 = 1.6
+            <br/>8 / 5 = 1.6
             ---
             ## AMM implementation in Solidity 
             ```
@@ -134,6 +142,7 @@
             ---
             ## References    
             * https://web.stanford.edu/class/cme241/lecture_slides/Tour-OrderBook.pdf
+            * https://medium.com/@orderlynetwork/amms-vs-order-books-in-crypto-a-comprehensive-comparison-85e3a8afcf96
           </textarea>
         </section>
 
